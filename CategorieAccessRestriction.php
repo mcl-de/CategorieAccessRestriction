@@ -20,7 +20,6 @@ function userCanAccessCategory($title, $user, $action, $result) {
 
 			// match pattern but has no access
 			if (preg_match($wgCARPattern, $category) && !(in_array($category, $user->getGroups()))) {
-				error_log('Has no access to group: '.$category);
 				$return = false;
 			}
 		}
