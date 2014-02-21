@@ -25,4 +25,8 @@ $wgCARPattern = '//';
 
 ## Usage
 The *$wgCARPattern* is a RegEx pattern which matches the categories on a pages, and these matches are needed to the user to access the page, otherwise he will get a ACCESS DENIED.
-For example to match all groups starting with *CAR_*: *'/CAR_/'* the pattern is case sensitive.
+For example to match all groups starting with "*CAR_*":
+```php
+'/CAR_/'
+```
+the pattern is case sensitive.
